@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Creeper</title>
-</head>
-
-<body>
-
-<script>
-    function showPicture() {
-  
-  var img = document.getElementById('bigpic')
-  img.style.display = "block";
-} 
-</script>
-
-<img style="display:none;" id="bigpic" src="LandonHughes96.github.io/dorrFace.png" />
-<button onclick="showPicture()">Click me</button>
-
-<img src="LandonHughes96.github.io/dorrL-dorrR.png" alt="pete" width="100%" height=100%>
-</body>
-
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Ladder</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/LadderGameHTML.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1080px; height: 1920px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Ladder</div>
+      </div>
+    </div>
+  </body>
 </html>
